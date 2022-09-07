@@ -9,6 +9,6 @@
 }
 
 body{
-	@apply bg-primary dark:bg-red;
+	@apply bg-primary dark:bg-darkPrimary transition-colors duration-700;
   font-size: 16px;
 }

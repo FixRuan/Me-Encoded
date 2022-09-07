@@ -20,7 +20,9 @@ module.exports = {
 				primary: "#F0E7DB",
 				secondary: "#F4EDE4",
 				text: "#0F1111",
-				subText: "#1F201F"
+				subText: "#1F201F",
+				darkPrimary: "#202023",
+				darkSecondary: "#29292D",
 			},
 			fontFamily: {
 				nunito: ["Nunito", "sans-serif"],

@@ -1,31 +1,35 @@
 import React, { useState } from "react";
 
 import Icon from "@mdi/react";
-import { mdiMenu, mdiGit, mdiCardsClubOutline, mdiClose } from "@mdi/js";
+import { mdiMenu, mdiGit, mdiCardsClubOutline, mdiClose, } from "@mdi/js";
 
 import lineSVG from "../../assets/line.svg";
 import { Widget } from "./Widget";
+import { useDarkMode } from "../../context/DarkModeContext";
 
 
 export function Header() {
 	const [nav, setNav] = useState(false);
+	const { darkMode } = useDarkMode();
+
+	console.log(darkMode);
 
 	return (
 		<div>
-			<div className='flex w-full h-16 bg-secondary fixed items-center justify-between px-24'>
+			<div className='flex w-full h-16 bg-secondary fixed items-center justify-between px-24 dark:bg-darkSecondary transition-colors duration-700'>
 				<Widget />
 				<div className="flex items-center gap-1 group cursor-pointer">
 					<Icon
 						className="group-hover:-rotate-12 transition-all group-hover:scale-125"
 						path={mdiCardsClubOutline}
 						size={1}
-						color="#0F1111"
+						color={`${darkMode ? "#F0E7DB" : "#0F1111"}`}
 					/>
-					<span className="font-nunito font-bold text-text">Ruan Pablo</span>
+					<span className="font-nunito font-bold text-text dark:text-primary">Ruan Pablo</span>
 					<img src={lineSVG} alt="line" className="absolute left-0 -bottom-[2px]" />
 				</div>
 				<div className="sm:hidden md:flex">
-					<ul className="flex gap-8">
+					<ul className="flex gap-8 dark:text-primary">
 						<li className="font-nunito"><a className="hover:underline" href="#">Contact</a></li>
 						<li className="font-nunito"><a className="hover:underline" href="#">Project</a></li>
 						<li className="font-nunito">
@@ -55,7 +59,7 @@ export function Header() {
 
 			<div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
 				<div className={
-					nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-primary p-10 ease-in duration-500"
+					nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-primary dark:bg-darkPrimary p-10 ease-in duration-500"
 						: "fixed left-[-100%] top-0 p-10 ease-in duration-500"
 				}>
 					<div className="flex flex-col">
