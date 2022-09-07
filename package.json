@@ -10,6 +10,9 @@
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@mdi/font": "^7.0.96",
+    "@mdi/js": "^7.0.96",
+    "@mdi/react": "^1.6.1",
     "eslint": "^8.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
