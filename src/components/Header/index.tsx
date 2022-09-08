@@ -25,7 +25,7 @@ export function Header() {
 	const { darkMode, audio } = useConfig();
 
 	return (
-		<div className="fixed top-0 left-0 z-50">
+		<div className="fixed top-0 left-0 z-50" id="header">
 
 			<ReactHowler
 				src={musicMp3}
@@ -49,11 +49,11 @@ export function Header() {
 				</div>
 				<div className="hidden md:flex">
 					<ul className="flex gap-8 dark:text-primary">
-						<li className="font-nunito"><a className="hover:underline" href="#">Project</a></li>
-						<li className="font-nunito"><a className="hover:underline" href="#">Skills</a></li>
-						<li className="font-nunito"><a className="hover:underline" href="#">Contact</a></li>
+						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#projects">Projects</a></li>
+						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#skills">Skills</a></li>
+						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#contact">Contact</a></li>
 						<li className="font-nunito">
-							<a className="flex items-center gap-1 hover:underline" href="#">
+							<a target="_blank" className="flex items-center gap-1 hover:underline" href="https://github.com/FixRuan/Me-Encoded" rel="noreferrer">
 								Source
 								<Icon
 									path={mdiGit}
@@ -95,11 +95,15 @@ export function Header() {
 
 						<h2 className="text-xl font-MPlus font-bold mb-6 text-red">Navbar</h2>
 						<ul className="flex flex-col gap-8 dark:text-primary">
-							<li className="font-nunito"><a className="hover:underline" href="#">Project</a></li>
-							<li className="font-nunito"><a className="hover:underline" href="#">Skills</a></li>
-							<li className="font-nunito"><a className="hover:underline" href="#">Contact</a></li>
+							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#projects">Projects</a></li>
+							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#skills">Skills</a></li>
+							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#contact">Contact</a></li>
 							<li className="font-nunito">
-								<a className="flex items-center gap-1 hover:underline" href="#">
+								<a target="_blank"
+									href="https://github.com/FixRuan/Me-Encoded"
+									rel="noreferrer"
+									className="flex items-center gap-1 hover:underline"
+								>
 									Source
 									<Icon
 										path={mdiGit}
@@ -114,7 +118,7 @@ export function Header() {
 							<h2 className="text-xl font-MPlus font-bold text-red">Links</h2>
 
 							<div className="flex gap-4 mt-4">
-								<a href="#" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400">
+								<a target="_blank" href="https://github.com/fixruan" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
 									<Icon
 										path={mdiGithub}
 										size={0.8}
@@ -122,7 +126,7 @@ export function Header() {
 									/>
 								</a>
 
-								<a href="#" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400">
+								<a target="_blank" href="https://www.linkedin.com/in/fixruan/" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
 									<Icon
 										path={mdiLinkedin}
 										size={0.8}

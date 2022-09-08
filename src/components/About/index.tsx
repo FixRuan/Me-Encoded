@@ -5,7 +5,7 @@ import { mdiInformationVariant } from "@mdi/js";
 
 export function About() {
 	return (
-		<section className="mt-16 w-full grid md:grid-cols-2 sm:grid-cols-1 pb-2 mb-4">
+		<section className="mt-16 w-full grid md:grid-cols-2 sm:grid-cols-1 pb-2 mb-4" id="about">
 			<div className="mt-12 h-[360px] mx-8 bg-transparent flex">
 				<h2 className="text-red font-MPlus font-bold">3d HERE</h2>
 			</div>

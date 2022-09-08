@@ -7,7 +7,7 @@ import contact_shape from "../../assets/contact-shape.svg";
 
 export function Contact() {
 	return (
-		<section className="mb-4 px-8 ">
+		<section className="mb-4 px-8" id="contact">
 			<h1 className="font-bold font-nunito text-DarkRed dark:text-red">Contact-me</h1>
 
 			<div className="flex flex-col md:flex-row mt-4 gap-4">
