@@ -35,10 +35,10 @@ export function Header() {
 						size={1}
 						color={`${darkMode ? "#FFFFFF" : "#0F1111"}`}
 					/>
-					<span className="font-nunito font-bold text-text dark:text-white">Ruan Pablo</span>
+					<span className="font-nunito font-bold text-text dark:text-white text-sm md:text-base">Ruan Pablo</span>
 					<img src={darkMode ? darkLineSVG : lightLineSVG} alt="line" className="absolute left-0 -bottom-[2px]" />
 				</div>
-				<div className="sm:hidden md:flex">
+				<div className="hidden md:flex">
 					<ul className="flex gap-8 dark:text-primary">
 						<li className="font-nunito"><a className="hover:underline" href="#">Project</a></li>
 						<li className="font-nunito"><a className="hover:underline" href="#">Skills</a></li>

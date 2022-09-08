@@ -3,10 +3,9 @@ import React from "react";
 import Icon from "@mdi/react";
 import { mdiInformationVariant } from "@mdi/js";
 
-
 export function About() {
 	return (
-		<div className="mt-16 w-full grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pb-2">
+		<div className="mt-16 w-full grid md:grid-cols-2 sm:grid-cols-1 pb-2 mb-4">
 			<div className="mt-12 h-[360px] mx-8 bg-transparent flex">
 				<h2 className="text-red font-MPlus font-bold">3d HERE</h2>
 			</div>
@@ -14,10 +13,10 @@ export function About() {
 				<header className="flex gap-4 justify-end">
 
 					<div className="flex flex-col">
-						<h2 className="font-nunito font-bold text-text text-right dark:text-white">
+						<h2 className="font-nunito text-sm md:text-base font-bold text-text text-right dark:text-white">
 							Ruan Pablo Gomes Rocha
 						</h2>
-						<span className="font-nunito font-medium text-subText text-right dark:text-secondary">
+						<span className="font-nunito font-medium text-subText text-right dark:text-secondary text-sm md:text-base ">
 							Junior FrontEnd and Mobile Developer
 						</span>
 					</div>
@@ -37,7 +36,7 @@ export function About() {
 					/>
 					About ME
 				</span>
-				<span className="text-justify font-nunito text-subText dark:text-primary h-auto">
+				<span className="text-justify font-nunito text-subText dark:text-primary mb-4">
 					Lorem Ipsum is simply dummy text of the printing and
 					typesetting industry. Lorem Ipsum has been the industrys
 					standard dummy text ever since the 1500s, when an unknown printer
