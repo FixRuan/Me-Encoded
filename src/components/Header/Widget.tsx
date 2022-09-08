@@ -1,12 +1,22 @@
 import React from "react";
 
 import Icon from "@mdi/react";
-import { mdiWeatherNight, mdiVolumeHigh, mdiWhiteBalanceSunny } from "@mdi/js";
-import { useDarkMode } from "../../context/DarkModeContext";
+import {
+	mdiWeatherNight,
+	mdiVolumeHigh,
+	mdiVolumeOff,
+	mdiWhiteBalanceSunny
+} from "@mdi/js";
+import { useConfig } from "../../context/WidgetContext";
 
 
 export function Widget() {
-	const { darkMode, handleDarkMode } = useDarkMode();
+	const {
+		audio,
+		darkMode,
+		handleDarkMode,
+		handleAudio
+	} = useConfig();
 
 
 	return (
@@ -30,12 +40,23 @@ export function Widget() {
 			</button>
 
 			<div className="w-[25px] h-[60px] bg-red mt-[120px] rounded-full absolute">
-				<Icon
-					className="ml-[3px] mt-[30px] cursor-pointer"
-					path={mdiVolumeHigh}
-					size={0.8}
-					color="#F0E7DB"
-				/>
+				<button onClick={handleAudio}>
+					{audio ? (
+						<Icon
+							className="ml-[3px] mt-[30px] cursor-pointer"
+							path={mdiVolumeHigh}
+							size={0.8}
+							color="#F0E7DB"
+						/>
+					) : (
+						<Icon
+							className="ml-[3px] mt-[30px] cursor-pointer"
+							path={mdiVolumeOff}
+							size={0.8}
+							color="#F0E7DB"
+						/>
+					)}
+				</button>
 			</div>
 		</div>
 	);
