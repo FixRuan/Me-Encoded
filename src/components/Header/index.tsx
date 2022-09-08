@@ -25,7 +25,7 @@ export function Header() {
 	console.log(darkMode);
 
 	return (
-		<div className="fixed top-0 left-0">
+		<div className="fixed top-0 left-0 z-50">
 			<div className='flex w-full h-16 bg-secondary fixed items-center justify-between px-8 dark:bg-darkSecondary transition-colors duration-700'>
 				<Widget />
 				<div className="flex items-center gap-1 group cursor-pointer ml-12 transition-all duration-700">

@@ -5,7 +5,7 @@ import devlandiaImg from "../../assets/devlandia.png";
 
 export function Projects() {
 	return (
-		<div className="flex flex-col px-8 mt-24 mb-12">
+		<section className="flex flex-col px-8 mt-24 mb-12">
 			<h1 className="font-bold font-nunito text-DarkRed dark:text-red">My Projects</h1>
 
 			<div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4 mt-12">
@@ -66,6 +66,6 @@ export function Projects() {
 				</div>
 
 			</div>
-		</div>
+		</section>
 	);
 }
