@@ -12,7 +12,10 @@ export function Contact() {
 
 			<div className="flex flex-col md:flex-row mt-4 gap-4">
 				<div className="bg-white p-8 rounded-md relative md:max-w-[350px] h-[400px] dark:bg-darkSecondary  transition-all duration-700 mb-4">
-					<h2 className="text-text text-xl font-nunito font-medium dark:text-white">Contact Information</h2>
+					<h2 className="text-text text-xl font-nunito font-medium dark:text-white">
+						Contact Information
+					</h2>
+
 					<p className="font-nunito text-md dark:text-primary">
 						Fill  up the form and I will get back to you within 24 hours
 					</p>
