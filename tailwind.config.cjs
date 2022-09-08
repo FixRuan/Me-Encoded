@@ -25,7 +25,8 @@ module.exports = {
 				darkSecondary: "#29292D",
 			},
 			fontFamily: {
-				nunito: ["Nunito", "sans-serif"],
+				nunito: ["'Nunito'", "sans-serif"],
+				MPlus: ["'M PLUS Rounded 1c'", "sans-serif"]
 			}
 		},
 	},
