@@ -127,6 +127,11 @@ export function Contact() {
 							/>
 						</div>
 					</div>
+
+					<button type="submit" className="bg-red rounded-md text-white p-3 mt-6 flex w-full 
+					md:w-1/4 self-end items-center justify-center font-nunito font-medium">
+						Send Email
+					</button>
 				</form>
 			</div>
 		</section>
