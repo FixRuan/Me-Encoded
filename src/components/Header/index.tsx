@@ -10,7 +10,10 @@ import {
 	mdiLinkedin
 } from "@mdi/js";
 
-import lineSVG from "../../assets/line.svg";
+
+import lightLineSVG from "../../assets/LightLine.svg";
+import darkLineSVG from "../../assets/DarkLine.svg";
+
 import { Widget } from "./Widget";
 import { useDarkMode } from "../../context/DarkModeContext";
 
@@ -25,15 +28,15 @@ export function Header() {
 		<div className="fixed top-0 left-0">
 			<div className='flex w-full h-16 bg-secondary fixed items-center justify-between px-8 dark:bg-darkSecondary transition-colors duration-700'>
 				<Widget />
-				<div className="flex items-center gap-1 group cursor-pointer ml-12">
+				<div className="flex items-center gap-1 group cursor-pointer ml-12 transition-all duration-700">
 					<Icon
 						className="group-hover:-rotate-12 transition-all group-hover:scale-125"
 						path={mdiCardsClubOutline}
 						size={1}
-						color={`${darkMode ? "#F0E7DB" : "#0F1111"}`}
+						color={`${darkMode ? "#FFFFFF" : "#0F1111"}`}
 					/>
-					<span className="font-nunito font-bold text-text dark:text-primary">Ruan Pablo</span>
-					<img src={lineSVG} alt="line" className="absolute left-0 -bottom-[2px]" />
+					<span className="font-nunito font-bold text-text dark:text-white">Ruan Pablo</span>
+					<img src={darkMode ? darkLineSVG : lightLineSVG} alt="line" className="absolute left-0 -bottom-[2px]" />
 				</div>
 				<div className="sm:hidden md:flex">
 					<ul className="flex gap-8 dark:text-primary">

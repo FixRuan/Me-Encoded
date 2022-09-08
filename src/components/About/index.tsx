@@ -6,7 +6,7 @@ import { mdiInformationVariant } from "@mdi/js";
 
 export function About() {
 	return (
-		<div className="mt-16 w-full grid h-[680px] grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+		<div className="mt-16 w-full grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 pb-2">
 			<div className="mt-12 h-[360px] mx-8 bg-transparent flex">
 				<h2 className="text-red font-MPlus font-bold">3d HERE</h2>
 			</div>
@@ -37,7 +37,7 @@ export function About() {
 					/>
 					About ME
 				</span>
-				<span className="text-justify font-nunito text-primary h-auto">
+				<span className="text-justify font-nunito text-subText dark:text-primary h-auto">
 					Lorem Ipsum is simply dummy text of the printing and
 					typesetting industry. Lorem Ipsum has been the industrys
 					standard dummy text ever since the 1500s, when an unknown printer
