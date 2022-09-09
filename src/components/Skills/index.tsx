@@ -1,6 +1,5 @@
 import React from "react";
 
-import reactPng from "../../assets/skills/react.png";
 import { skills } from "../../utils/skills";
 
 
