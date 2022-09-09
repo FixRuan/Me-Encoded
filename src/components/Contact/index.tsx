@@ -10,7 +10,7 @@ export function Contact() {
 		<section className="mb-4 px-8" id="contact">
 			<h1 className="font-bold font-nunito text-DarkRed dark:text-red">Contact-me</h1>
 
-			<div className="flex flex-col md:flex-row mt-4 gap-4">
+			<div className="flex flex-col md:flex-row mt-4 gap-4" data-aos="fade-left" data-aos-once="true">
 				<div className="bg-white p-8 rounded-md relative md:max-w-[350px] h-[400px] dark:bg-darkSecondary  transition-all duration-700 mb-4">
 					<h2 className="text-text text-xl font-nunito font-medium dark:text-white">
 						Contact Information
@@ -59,7 +59,10 @@ export function Contact() {
 				</div>
 
 
-				<form className="flex flex-col flex-1 mb-8">
+				<form className="flex flex-col flex-1 mb-8"
+					data-aos="fade-up"
+					data-aos-once="true"
+				>
 
 					<div className="flex items-center gap-2 mb-8">
 						<div className="flex flex-col w-1/2">

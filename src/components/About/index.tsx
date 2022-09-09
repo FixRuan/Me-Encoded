@@ -10,7 +10,7 @@ export function About() {
 				<h2 className="text-red font-MPlus font-bold">3d HERE</h2>
 			</div>
 			<div className="mt-12 h-[360px] mx-8 flex flex-col">
-				<header className="flex gap-4 justify-end">
+				<header data-aos-once="true" data-aos="fade-left" className="flex gap-4 justify-end">
 
 					<div className="flex flex-col">
 						<h2 className="font-nunito text-sm md:text-base font-bold text-text text-right dark:text-white">
@@ -29,14 +29,14 @@ export function About() {
 
 				</header>
 
-				<span className="flex w-[140px] mb-4 items-center justify-center px-4 py-1 rounded-lg text-lg font-nunito font-medium bg-white text-red dark:bg-darkSecondary transition-all duration-500">
+				<span data-aos="fade-right" data-aos-once="true" className="flex w-[140px] mb-4 items-center justify-center px-4 py-1 rounded-lg text-lg font-nunito font-medium bg-white text-red dark:bg-darkSecondary transition-all duration-500">
 					<Icon
 						path={mdiInformationVariant}
 						size={1}
 					/>
 					About ME
 				</span>
-				<span className="text-justify font-nunito text-subText dark:text-primary mb-4">
+				<span data-aos="fade-left" className="text-justify font-nunito text-subText dark:text-primary mb-4">
 					Lorem Ipsum is simply dummy text of the printing and
 					typesetting industry. Lorem Ipsum has been the industrys
 					standard dummy text ever since the 1500s, when an unknown printer

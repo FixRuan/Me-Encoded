@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { About } from "./components/About";
 import { Contact } from "./components/Contact";
@@ -9,9 +9,17 @@ import { Skills } from "./components/Skills";
 
 import { WidgetConfigProvider } from "./context/WidgetContext";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 export function App() {
+	useEffect(() => {
+		Aos.init({
+			duration: 1400,
+		});
+	}, []);
+
 	return (
 		<WidgetConfigProvider>
 			<Header />
