@@ -8,16 +8,16 @@ import contact_shape from "../../assets/contact-shape.svg";
 export function Contact() {
 	return (
 		<section className="mb-4 px-8" id="contact">
-			<h1 className="font-bold font-nunito text-DarkRed dark:text-red">Contact-me</h1>
+			<h1 className="font-bold font-nunito text-DarkRed dark:text-red">Contato</h1>
 
 			<div className="flex flex-col md:flex-row mt-4 gap-4" data-aos="fade-left" data-aos-once="true">
 				<div className="bg-white p-8 rounded-md relative md:max-w-[350px] h-[400px] dark:bg-darkSecondary  transition-all duration-700 mb-4">
 					<h2 className="text-text text-xl font-nunito font-medium dark:text-white">
-						Contact Information
+						Informações de contato
 					</h2>
 
 					<p className="font-nunito text-md dark:text-primary">
-						Fill  up the form and I will get back to you within 24 hours
+						Preencha o formulário e retornarei em até 24 horas
 					</p>
 
 					<div className="flex flex-col mt-8 mb-16">
@@ -74,7 +74,7 @@ export function Contact() {
 					<div className="flex items-center gap-2 mb-8">
 						<div className="flex flex-col w-1/2">
 							<label htmlFor="name" className="text-red font-nunito font-medium">
-								First Name
+								Nome
 							</label>
 							<input
 								type="text"
@@ -86,7 +86,7 @@ export function Contact() {
 
 						<div className="flex flex-col w-1/2">
 							<label htmlFor="lastName" className="text-red font-nunito font-medium">
-								Last Name
+								Sobrenome
 							</label>
 							<input
 								type="text"
@@ -100,7 +100,7 @@ export function Contact() {
 					<div className="flex items-center gap-2 mb-8">
 						<div className="flex flex-col w-1/2">
 							<label htmlFor="email" className="text-red font-nunito font-medium">
-								Email
+								E-mail
 							</label>
 							<input
 								type="text"
@@ -112,7 +112,7 @@ export function Contact() {
 
 						<div className="flex flex-col w-1/2">
 							<label htmlFor="phone" className="text-red font-nunito font-medium">
-								Phone
+								Telefone
 							</label>
 							<input
 								type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
@@ -125,7 +125,7 @@ export function Contact() {
 					<div className="flex">
 						<div className="flex flex-col w-full">
 							<label htmlFor="message" className="text-red font-nunito font-medium">
-								Message
+								Mensagem
 							</label>
 							<textarea
 								id="message"
@@ -140,7 +140,7 @@ export function Contact() {
 
 					<button type="submit" className="bg-red rounded-md text-white p-3 mt-6 flex w-full 
 					md:w-[200px] self-end items-center justify-center font-nunito font-medium opacity-80 hover:opacity-100 transition-all duration-300">
-						Send Email
+						Enviar e-mail
 					</button>
 				</form>
 			</div>

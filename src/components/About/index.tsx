@@ -38,7 +38,7 @@ export function About() {
 							Ruan Pablo Gomes Rocha
 						</h2>
 						<span className="font-nunito font-medium text-subText text-right dark:text-secondary text-sm md:text-base ">
-							Junior FrontEnd and Mobile Developer
+							Desenvolvedor Front-End e Mobile - Junior
 						</span>
 					</div>
 
@@ -50,12 +50,12 @@ export function About() {
 
 				</header>
 
-				<span data-aos="fade-right" data-aos-once="true" className="flex w-[140px] mb-4 items-center justify-center px-4 py-1 rounded-lg text-lg font-nunito font-medium bg-white text-red dark:bg-darkSecondary transition-all duration-500">
+				<span data-aos="fade-right" data-aos-once="true" className="flex w-[180px] mb-4 items-center justify-center px-4 py-1 rounded-lg text-lg font-nunito font-medium bg-white text-red dark:bg-darkSecondary transition-all duration-500">
 					<Icon
 						path={mdiInformationVariant}
 						size={1}
 					/>
-					About ME
+					Sobre Mim
 				</span>
 				<span data-aos="fade-left" className="text-justify font-nunito text-subText dark:text-primary mb-4">
 					Lorem Ipsum is simply dummy text of the printing and

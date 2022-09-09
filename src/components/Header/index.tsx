@@ -51,9 +51,9 @@ export function Header() {
 				</div>
 				<div className="hidden md:flex">
 					<ul className="flex gap-8 dark:text-primary">
-						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#projects">Projects</a></li>
-						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#skills">Skills</a></li>
-						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#contact">Contact</a></li>
+						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#projects">Projetos</a></li>
+						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#skills">Habilidades</a></li>
+						<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#contact">Contato</a></li>
 						<li className="font-nunito">
 							<a target="_blank" className="flex items-center gap-1 hover:underline" href="https://github.com/FixRuan/Me-Encoded" rel="noreferrer">
 								Source
@@ -95,11 +95,11 @@ export function Header() {
 							/>
 						</button>
 
-						<h2 className="text-xl font-MPlus font-bold mb-6 text-red">Navbar</h2>
+						<h2 className="text-xl font-MPlus font-bold mb-6 text-red">Navegação</h2>
 						<ul className="flex flex-col gap-8 dark:text-primary">
-							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#projects">Projects</a></li>
-							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#skills">Skills</a></li>
-							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#contact">Contact</a></li>
+							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#projects">Projetos</a></li>
+							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#skills">Habilidades</a></li>
+							<li className="font-nunito"><a onClick={() => setNav(false)} className="hover:underline" href="/#contact">Contato</a></li>
 							<li className="font-nunito">
 								<a target="_blank"
 									href="https://github.com/FixRuan/Me-Encoded"

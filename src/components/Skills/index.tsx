@@ -6,7 +6,7 @@ import { skills } from "../../utils/skills";
 export function Skills() {
 	return (
 		<section className="px-8 mb-12" id="skills">
-			<h1 className="font-bold font-nunito text-DarkRed dark:text-red">Skills</h1>
+			<h1 className="font-bold font-nunito text-DarkRed dark:text-red">Minhas Habilidades</h1>
 
 			<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
 
