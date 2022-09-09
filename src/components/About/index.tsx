@@ -15,8 +15,8 @@ export function About() {
 		<section className="mt-16 w-full grid md:grid-cols-2 sm:grid-cols-1 pb-2 mb-4" id="about">
 			<div className="mt-12 h-[360px] mx-8 flex">
 
-				<Canvas camera={{ zoom: 12, position: [12, 10, 20] }} className="pt-4 cursor-pointer" >
-					<PerspectiveCamera makeDefault fov={52} position={[1, 3, 3]} />
+				<Canvas camera={{ zoom: 30 }} className="pt-4 cursor-pointer" >
+					<PerspectiveCamera makeDefault fov={45} position={[1, 2.5, 3.2]} />
 
 					<ambientLight intensity={0.5} />
 
