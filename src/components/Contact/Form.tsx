@@ -1,10 +1,25 @@
 import React from "react";
 
 
+import * as Yup from "yup";
+import { FieldValues, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+const EmailFormSchema = Yup.object().shape({
+	name: Yup.string().required("Nome Obrigatório"),
+	lastName: Yup.string(),
+	email: Yup.string().email("Informe um email válido"),
+	cel: Yup.string().required("Informe o número de telefone"),
+	message: Yup.string().min(8).required("Informe uma mensagem"),
+});
+
 export function Form() {
+	const form = useForm({
+		resolver: yupResolver(EmailFormSchema)
+	});
 
 
-	function handleSubmit() {
+	function sendEmail() {
 		event?.preventDefault();
 		console.log("submit");
 	}
@@ -83,7 +98,7 @@ export function Form() {
 				</div>
 			</div>
 
-			<button type="submit" className="submitButton" onClick={handleSubmit}>
+			<button type="submit" className="submitButton" onClick={sendEmail}>
 				Enviar e-mail
 			</button>
 		</form>

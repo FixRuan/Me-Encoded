@@ -10,6 +10,7 @@
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.7",
     "@mdi/font": "^7.0.96",
     "@mdi/js": "^7.0.96",
     "@mdi/react": "^1.6.1",
@@ -19,8 +20,10 @@
     "eslint": "^8.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.35.0",
     "react-howler": "^5.2.0",
-    "three": "^0.144.0"
+    "three": "^0.144.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
