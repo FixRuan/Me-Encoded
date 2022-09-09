@@ -1,13 +1,29 @@
-import React from "react";
+/* eslint-disable react/no-unknown-property */
+import React, { Suspense } from "react";
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
 import Icon from "@mdi/react";
 import { mdiInformationVariant } from "@mdi/js";
+import { Coral } from "../Ccoral";
+
+//camera={{ zoom: 12, position: [12, 10, 20] }}
 
 export function About() {
 	return (
 		<section className="mt-16 w-full grid md:grid-cols-2 sm:grid-cols-1 pb-2 mb-4" id="about">
-			<div className="mt-12 h-[360px] mx-8 bg-transparent flex">
-				<h2 className="text-red font-MPlus font-bold">3d HERE</h2>
+			<div className="mt-12 h-[360px] mx-8 flex">
+				<Canvas camera={{ zoom: 12, position: [12, 10, 20] }} className="pt-4 cursor-pointer" >
+					<PerspectiveCamera makeDefault fov={52} position={[1, 3, 3]} />
+					<ambientLight intensity={0.2} />
+					<pointLight position={[35, 15, 10]} />
+					<Suspense fallback={null}>
+						<Coral />
+					</Suspense>
+
+					<OrbitControls />
+				</Canvas>
 			</div>
 			<div className="mt-12 h-[360px] mx-8 flex flex-col">
 				<header data-aos-once="true" data-aos="fade-left" className="flex gap-4 justify-end">

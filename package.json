@@ -13,17 +13,21 @@
     "@mdi/font": "^7.0.96",
     "@mdi/js": "^7.0.96",
     "@mdi/react": "^1.6.1",
+    "@react-three/drei": "^9.29.1",
+    "@react-three/fiber": "^8.7.2",
     "aos": "^2.3.4",
     "eslint": "^8.23.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-howler": "^5.2.0"
+    "react-howler": "^5.2.0",
+    "three": "^0.144.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/react-howler": "^5.2.0",
+    "@types/three": "^0.144.0",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "@vitejs/plugin-react": "^2.1.0",
