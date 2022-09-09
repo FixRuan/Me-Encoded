@@ -1,4 +1,10 @@
-import React, { createContext, ReactNode, useContext, useEffect, useState } from "react";
+import React, {
+	createContext,
+	ReactNode,
+	useContext,
+	useEffect,
+	useState
+} from "react";
 
 
 interface WidgetConfigContextProps {
@@ -46,16 +52,12 @@ function WidgetConfigProvider({ children }: WidgetConfigProviderProps) {
 
 	useEffect(() => {
 		const theme = localStorage.getItem("theme");
-		console.log(theme);
 
 		if (theme === "dark") {
-			setDarkMode(true);
 			html.classList.add("dark");
 		} else {
-			setDarkMode(false);
 			html.classList.remove("dark");
 		}
-		console.log(darkMode);
 	}, []);
 
 	return (
