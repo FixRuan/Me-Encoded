@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, useContext, useState } from "react";
+import React, { createContext, ReactNode, useContext, useEffect, useState } from "react";
 
 
 interface WidgetConfigContextProps {
@@ -16,7 +16,16 @@ interface WidgetConfigProviderProps {
 
 function WidgetConfigProvider({ children }: WidgetConfigProviderProps) {
 	const [audio, setAudio] = useState(false);
-	const [darkMode, setDarkMode] = useState(false);
+	const [darkMode, setDarkMode] = useState(() => {
+		if (localStorage) {
+			const theme = localStorage.getItem("theme");
+
+			if (theme === "dark") {
+				return true;
+			}
+		}
+		return false;
+	});
 	const html = document.getElementsByTagName("html")[0];
 
 	function handleDarkMode() {
@@ -24,14 +33,30 @@ function WidgetConfigProvider({ children }: WidgetConfigProviderProps) {
 
 		if (!darkMode) {
 			html.classList.add("dark");
+			localStorage.setItem("theme", "dark");
 		} else {
 			html.classList.remove("dark");
+			localStorage.setItem("theme", "light");
 		}
 	}
 
 	function handleAudio() {
 		setAudio(!audio);
 	}
+
+	useEffect(() => {
+		const theme = localStorage.getItem("theme");
+		console.log(theme);
+
+		if (theme === "dark") {
+			setDarkMode(true);
+			html.classList.add("dark");
+		} else {
+			setDarkMode(false);
+			html.classList.remove("dark");
+		}
+		console.log(darkMode);
+	}, []);
 
 	return (
 		<WidgetConfigContext.Provider value={{
