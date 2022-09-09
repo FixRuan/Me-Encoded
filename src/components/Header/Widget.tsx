@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Icon from "@mdi/react";
 import {
@@ -7,10 +7,17 @@ import {
 	mdiVolumeOff,
 	mdiWhiteBalanceSunny
 } from "@mdi/js";
-import { useConfig } from "../../context/WidgetContext";
 
+import { useConfig } from "../../context/WidgetContext";
+import ReactHowler from "react-howler";
+
+import theme_switch_audio from "../../assets/theme-switch.wav";
+import music_switch_audio from "../../assets/audio-switch.wav";
 
 export function Widget() {
+	const [themeTap, setThemeTap] = useState(false);
+	const [musicTap, setMusicTap] = useState(false);
+
 	const {
 		audio,
 		darkMode,
@@ -18,10 +25,33 @@ export function Widget() {
 		handleAudio
 	} = useConfig();
 
+	function onSwitchTheme() {
+		setThemeTap(true);
+		handleDarkMode();
+	}
+
+	function onSwitchAudio() {
+		setMusicTap(true);
+		handleAudio();
+	}
 
 	return (
 		<div className="absolute -left-10 -top-10 w-[100px] h-[100px] rounded-full bg-red flex items-center justify-center">
-			<button onClick={handleDarkMode}>
+			<ReactHowler
+				src={theme_switch_audio}
+				playing={themeTap}
+				onEnd={() => setThemeTap(false)}
+				volume={0.05}
+			/>
+
+			<ReactHowler
+				src={music_switch_audio}
+				playing={musicTap}
+				onEnd={() => setMusicTap(false)}
+				volume={0.05}
+			/>
+
+			<button onClick={onSwitchTheme} disabled={themeTap} className="disabled:opacity-50">
 				{darkMode ? (
 					<Icon
 						className="mt-4 ml-4 cursor-pointer hover:scale-105 transition-all"
@@ -40,7 +70,7 @@ export function Widget() {
 			</button>
 
 			<div className="w-[25px] h-[60px] bg-red mt-[120px] rounded-full absolute">
-				<button onClick={handleAudio}>
+				<button onClick={onSwitchAudio} disabled={musicTap} className="disabled:opacity-50">
 					{audio ? (
 						<Icon
 							className="ml-[3px] mt-[30px] cursor-pointer"

@@ -44,7 +44,9 @@ export function Header() {
 						size={1}
 						color={`${darkMode ? "#FFFFFF" : "#0F1111"}`}
 					/>
-					<span className="font-nunito font-bold text-text dark:text-white text-sm md:text-base">Ruan Pablo</span>
+					<a href="/#about">
+						<span className="font-nunito font-bold text-text dark:text-white text-sm md:text-base">Ruan Pablo</span>
+					</a>
 					<img src={darkMode ? darkLineSVG : lightLineSVG} alt="line" className="absolute left-0 -bottom-[2px] -z-50" />
 				</div>
 				<div className="hidden md:flex">

@@ -38,7 +38,7 @@ export function Contact() {
 					</div>
 
 					<div className="flex items-center gap-2 md:mt-16">
-						<a href="#" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400">
+						<a target="_blank" href="https://github.com/fixruan" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
 							<Icon
 								path={mdiGithub}
 								size={0.8}
@@ -46,7 +46,7 @@ export function Contact() {
 							/>
 						</a>
 
-						<a href="#" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400">
+						<a target="_blank" href="https://www.linkedin.com/in/fixruan/" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
 							<Icon
 								path={mdiLinkedin}
 								size={0.8}
@@ -132,7 +132,7 @@ export function Contact() {
 					</div>
 
 					<button type="submit" className="bg-red rounded-md text-white p-3 mt-6 flex w-full 
-					md:w-[200px] self-end items-center justify-center font-nunito font-medium">
+					md:w-[200px] self-end items-center justify-center font-nunito font-medium opacity-80 hover:opacity-100 transition-all duration-300">
 						Send Email
 					</button>
 				</form>
