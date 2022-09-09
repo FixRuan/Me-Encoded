@@ -23,3 +23,9 @@ body{
 button{
 	outline: none;
 }
+
+.submitButton{
+	@apply bg-red rounded-md text-white p-3 mt-6 flex w-full 
+	md:w-[200px] self-end items-center justify-center font-nunito font-medium opacity-80 
+	hover:opacity-100 transition-all duration-300
+}
