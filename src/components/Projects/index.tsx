@@ -1,8 +1,5 @@
 import React from "react";
 
-
-import devlandiaImg from "../../assets/devlandia.png";
-
 import { projectsArray } from "../../utils/projects";
 
 export function Projects() {

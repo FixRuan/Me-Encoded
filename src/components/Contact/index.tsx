@@ -1,6 +1,6 @@
 import React from "react";
 
-import { mdiPhone, mdiEmail, mdiGithub, mdiLinkedin } from "@mdi/js";
+import { mdiPhone, mdiEmail, mdiGithub, mdiLinkedin, mdiMapMarker } from "@mdi/js";
 import Icon from "@mdi/react";
 
 import contact_shape from "../../assets/contact-shape.svg";
@@ -26,7 +26,7 @@ export function Contact() {
 								path={mdiPhone}
 								size={1}
 							/>
-							(xx) xxxxx-xxxx
+							(44) 99833-4877
 						</span>
 						<span className="flex mt-4 gap-1 items-center text-text font-nunito font-medium text-xl  dark:text-secondary">
 							<Icon
@@ -34,6 +34,13 @@ export function Contact() {
 								size={1}
 							/>
 							ruangoio01@gmail.com
+						</span>
+						<span className="flex mt-4 gap-1 items-center text-text font-nunito font-medium text-xl  dark:text-secondary">
+							<Icon
+								path={mdiMapMarker}
+								size={1}
+							/>
+							Goioerê PR
 						</span>
 					</div>
 
