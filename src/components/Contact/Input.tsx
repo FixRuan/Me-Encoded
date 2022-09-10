@@ -1,4 +1,6 @@
 import React from "react";
+import { FieldError } from "react-hook-form";
+
 
 interface InputProps {
 	name: string;
@@ -6,11 +8,14 @@ interface InputProps {
 	type?: string;
 	register: any;
 	message?: boolean;
+	error?: any;
 }
 
-export function Input({ name, title, type, register, message }: InputProps) {
+export function Input({ name, title, type, register, message, error }: InputProps) {
 	return (
-		<>
+		<div className="relative flex flex-col">
+			{error && <span className="text-text text-xs dark:text-purple-400 absolute -top-3">{error.message}</span>}
+
 			<label htmlFor={name} className="text-red font-nunito font-medium">
 				{title}
 			</label>
@@ -34,6 +39,6 @@ export function Input({ name, title, type, register, message }: InputProps) {
 					/>
 				)
 			}
-		</>
+		</div>
 	);
 }

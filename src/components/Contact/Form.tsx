@@ -9,9 +9,9 @@ import { Input } from "./Input";
 const EmailFormSchema = Yup.object().shape({
 	name: Yup.string().required("Nome Obrigatório"),
 	lastName: Yup.string(),
-	email: Yup.string().email("Informe um email válido"),
+	email: Yup.string().email("Informe um email válido").required("E-mail obrigatório"),
 	phone: Yup.string().required("Informe o número de telefone"),
-	message: Yup.string().min(8).required("Informe uma mensagem"),
+	mess: Yup.string().min(8, "Mínimo de 8 caracteres").required("Informe uma mensagem"),
 });
 
 
@@ -41,6 +41,7 @@ export function Form() {
 						register={register}
 						title="Nome"
 						type="text"
+						error={errors.name}
 					/>
 				</div>
 
@@ -50,6 +51,7 @@ export function Form() {
 						register={register}
 						title="Sobrenome"
 						type="text"
+						error={errors.lastName}
 					/>
 				</div>
 			</div>
@@ -61,6 +63,7 @@ export function Form() {
 						register={register}
 						title="E-mail"
 						type="email"
+						error={errors.email}
 					/>
 				</div>
 
@@ -70,6 +73,7 @@ export function Form() {
 						register={register}
 						title="Telefone"
 						type="text"
+						error={errors.phone}
 					/>
 				</div>
 			</div>
@@ -77,10 +81,11 @@ export function Form() {
 			<div className="flex">
 				<div className="flex flex-col w-full">
 					<Input
-						name="message"
+						name="mess"
 						register={register}
 						title="Mensagem"
 						message={true}
+						error={errors.mess}
 					/>
 				</div>
 			</div>
