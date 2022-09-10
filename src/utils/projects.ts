@@ -19,7 +19,7 @@ const projectsArray: Project[] = [
 		name: "Devlândia",
 		description: "Aplicativo para aprender programação gratuito.",
 		image: DevlandiaImage,
-		link: "https://github.com/FixRuan/dev-landia"
+		link: "https://github.com/404jv/dev-landia"
 	},
 	{
 		name: "Go Pizza",
