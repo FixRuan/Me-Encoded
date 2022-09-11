@@ -55,14 +55,12 @@ export function About() {
 					/>
 					Sobre Mim
 				</span>
-				<span data-aos="fade-left" className="text-justify font-nunito text-subText dark:text-primary mb-4">
-					Lorem Ipsum is simply dummy text of the printing and
-					typesetting industry. Lorem Ipsum has been the industrys
-					standard dummy text ever since the 1500s, when an unknown printer
-					took a galley of type and scrambled it to make a type specimen book.
-					It has survived not only five centuries, but also the leap into electronic
-					typesetting, remaining essentially unchanged. It was popularised in the 1960s
-					with the release of Letraset sheets containing Lorem Ipsum passages.
+				<span data-aos="fade-left" className="text-justify font-nunito text-subText dark:text-primary mb-4 leading-7">
+					Olá 👋, meu nome é Ruan, tenho 18 anos e estou no meu último ano do curso de técnico em informática
+					pelo Instituto Federal do Paraná <a target="_blank" href="https://goioere.ifpr.edu.br/" className="text-green-900 hover:underline" rel="noreferrer">(IFPR)</a>
+					. Me apaixonei pela programação durante o curso integrado e comecei a aprofundar no desenvolvimento para Web,
+					assim como desenvolvimento de aplicativos mobile. Atualmente, estou focado em melhorar minhas skills e
+					também buscando minha primeira oportunidade de trabalho nessa área.
 				</span>
 			</div>
 		</section>
