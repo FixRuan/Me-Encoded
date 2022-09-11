@@ -8,8 +8,6 @@ import Icon from "@mdi/react";
 import { mdiInformationVariant } from "@mdi/js";
 import { Coral } from "../Ccoral";
 
-//camera={{ zoom: 12, position: [12, 10, 20] }}
-
 export function About() {
 	return (
 		<section className="mt-16 w-full grid md:grid-cols-2 sm:grid-cols-1 pb-2 mb-4" id="about">

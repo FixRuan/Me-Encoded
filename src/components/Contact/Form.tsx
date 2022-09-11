@@ -1,14 +1,17 @@
-import React from "react";
-
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+import React, { useRef } from "react";
 
 import * as Yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Input } from "./Input";
 
+import emailjs from "@emailjs/browser";
+
 const EmailFormSchema = Yup.object().shape({
 	name: Yup.string().required("Nome Obrigatório"),
 	lastName: Yup.string(),
+	fullName: Yup.string(),
 	email: Yup.string().email("Informe um email válido").required("E-mail obrigatório"),
 	phone: Yup.string().required("Informe o número de telefone"),
 	mess: Yup.string().min(8, "Mínimo de 8 caracteres").required("Informe uma mensagem"),
@@ -16,14 +19,21 @@ const EmailFormSchema = Yup.object().shape({
 
 
 export function Form() {
+	const form = useRef<string | HTMLFormElement>("");
+
 	const { register, handleSubmit, reset, formState: { errors } } = useForm({
 		resolver: yupResolver(EmailFormSchema)
 	});
 
 
-	function sendEmail(data: unknown) {
+	function sendEmail() {
+		const name = (document.getElementById("name") as HTMLInputElement).value;
+		const lastName = (document.getElementById("lastName") as HTMLInputElement).value;
+		(document.getElementById("fullName") as HTMLInputElement).value = name + " " + lastName;
+
 		event?.preventDefault();
-		console.log(data);
+		emailjs.sendForm("service_2y6jfng", "template_z7ig0zi", form.current, "Moh82Bl9kvb-59QJi")
+			.catch(error => console.log(error));
 		reset();
 	}
 
@@ -32,6 +42,7 @@ export function Form() {
 			data-aos="fade-up"
 			data-aos-once="true"
 			onSubmit={handleSubmit(sendEmail)}
+			ref={form}
 		>
 
 			<div className="flex items-center gap-2 mb-8">
@@ -53,6 +64,8 @@ export function Form() {
 						type="text"
 						error={errors.lastName}
 					/>
+					<input type="text" name="fullName" className="hidden" id="fullName" />
+
 				</div>
 			</div>
 

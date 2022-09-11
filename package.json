@@ -10,6 +10,7 @@
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@hookform/resolvers": "^2.9.7",
     "@mdi/font": "^7.0.96",
     "@mdi/js": "^7.0.96",
