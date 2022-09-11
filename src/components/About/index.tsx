@@ -6,6 +6,8 @@ import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
 import { Coral } from "../Ccoral";
 
+import { Info } from "phosphor-react";
+
 export function About() {
 	return (
 		<section className="mt-16 w-full grid md:grid-cols-2 sm:grid-cols-1 pb-2 mb-4" id="about">
@@ -46,11 +48,8 @@ export function About() {
 
 				</header>
 
-				<span data-aos="fade-right" data-aos-once="true" className="flex w-[180px] mb-4 items-center justify-center px-4 py-1 rounded-lg text-lg font-nunito font-medium bg-white text-red dark:bg-darkSecondary transition-all duration-500">
-					{/* <Icon
-						path={mdiInformationVariant}
-						size={1}
-					/> */}
+				<span data-aos="fade-right" data-aos-once="true" className="flex w-[180px] mb-4 items-center justify-center px-4 py-1 rounded-lg text-lg font-nunito font-medium bg-white text-red dark:bg-darkSecondary transition-all duration-500 gap-2">
+					<Info size={22} />
 					Sobre Mim
 				</span>
 				<span data-aos="fade-left" className="text-justify font-nunito text-subText dark:text-primary mb-4 leading-7">
