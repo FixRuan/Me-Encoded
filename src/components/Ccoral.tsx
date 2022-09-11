@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export function Coral(props: any) {
-	const { nodes, materials } = useGLTF("/ccoral.glb");
+	const { nodes, materials } = useGLTF("/ccoral.glb") as any;
 	const group = useRef(null);
 
 	useFrame(() => {
@@ -12,7 +12,8 @@ export function Coral(props: any) {
 			return;
 		}
 
-		group.current.rotation.y += 0.003;
+		const test = group.current as any;
+		test.rotation.y += 0.003;
 	});
 
 	return (
