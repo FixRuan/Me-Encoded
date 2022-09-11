@@ -23,7 +23,7 @@ const EmailJsPublicAPI = import.meta.env.VITE_EMAILJS_PUBLIC_API;
 
 
 export function Form() {
-	const form = useRef<string | HTMLFormElement>("");
+	const form = useRef<any>();
 
 	const { register, handleSubmit, reset, formState: { errors } } = useForm({
 		resolver: yupResolver(EmailFormSchema)
