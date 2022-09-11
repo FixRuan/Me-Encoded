@@ -1,13 +1,5 @@
 import React, { useState } from "react";
 
-import Icon from "@mdi/react";
-import {
-	mdiWeatherNight,
-	mdiVolumeHigh,
-	mdiVolumeOff,
-	mdiWhiteBalanceSunny
-} from "@mdi/js";
-
 import { useConfig } from "../../context/WidgetContext";
 import ReactHowler from "react-howler";
 
@@ -52,7 +44,7 @@ export function Widget() {
 			/>
 
 			<button onClick={onSwitchTheme} disabled={themeTap} className="disabled:opacity-50">
-				{darkMode ? (
+				{/* {darkMode ? (
 					<Icon
 						className="mt-4 ml-4 cursor-pointer hover:scale-105 transition-all"
 						path={mdiWhiteBalanceSunny}
@@ -66,12 +58,12 @@ export function Widget() {
 						size={1.2}
 						color="#F0E7DB"
 					/>
-				)}
+				)} */}
 			</button>
 
 			<div className="w-[25px] h-[60px] bg-red mt-[120px] rounded-full absolute">
 				<button onClick={onSwitchAudio} disabled={musicTap} className="disabled:opacity-50">
-					{audio ? (
+					{/* {audio ? (
 						<Icon
 							className="ml-[3px] mt-[30px] cursor-pointer"
 							path={mdiVolumeHigh}
@@ -85,7 +77,7 @@ export function Widget() {
 							size={0.8}
 							color="#F0E7DB"
 						/>
-					)}
+					)} */}
 				</button>
 			</div>
 		</div>

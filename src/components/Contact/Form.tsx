@@ -36,8 +36,7 @@ export function Form() {
 		(document.getElementById("fullName") as HTMLInputElement).value = name + " " + lastName;
 
 		event?.preventDefault();
-		emailjs.sendForm(EmailJsService, EmailJsTemplate, form.current, EmailJsPublicAPI)
-			.catch(error => console.log(error));
+		emailjs.sendForm(EmailJsService, EmailJsTemplate, form.current, EmailJsPublicAPI);
 		reset();
 	}
 

@@ -4,8 +4,6 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
-import Icon from "@mdi/react";
-import { mdiInformationVariant } from "@mdi/js";
 import { Coral } from "../Ccoral";
 
 export function About() {
@@ -49,10 +47,10 @@ export function About() {
 				</header>
 
 				<span data-aos="fade-right" data-aos-once="true" className="flex w-[180px] mb-4 items-center justify-center px-4 py-1 rounded-lg text-lg font-nunito font-medium bg-white text-red dark:bg-darkSecondary transition-all duration-500">
-					<Icon
+					{/* <Icon
 						path={mdiInformationVariant}
 						size={1}
-					/>
+					/> */}
 					Sobre Mim
 				</span>
 				<span data-aos="fade-left" className="text-justify font-nunito text-subText dark:text-primary mb-4 leading-7">

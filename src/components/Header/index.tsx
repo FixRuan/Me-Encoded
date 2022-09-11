@@ -1,16 +1,5 @@
 import React, { useState } from "react";
 
-import Icon from "@mdi/react";
-import {
-	mdiMenu,
-	mdiGit,
-	mdiCardsClubOutline,
-	mdiClose,
-	mdiGithub,
-	mdiLinkedin
-} from "@mdi/js";
-
-
 import lightLineSVG from "../../assets/LightLine.svg";
 import darkLineSVG from "../../assets/DarkLine.svg";
 
@@ -38,12 +27,9 @@ export function Header() {
 				<Widget />
 
 				<div className="flex items-center gap-1 group cursor-pointer ml-12 transition-all duration-700">
-					<Icon
-						className="group-hover:-rotate-12 transition-all group-hover:scale-125"
-						path={mdiCardsClubOutline}
-						size={1}
-						color={`${darkMode ? "#FFFFFF" : "#0F1111"}`}
-					/>
+					{/* Icon in name - group-hover:-rotate-12 transition-all group-hover:scale-125
+					color={`${darkMode ? "#FFFFFF" : "#0F1111"}`} */}
+
 					<a href="/#about">
 						<span className="font-nunito font-bold text-text dark:text-white text-sm md:text-base">Ruan Pablo</span>
 					</a>
@@ -57,23 +43,14 @@ export function Header() {
 						<li className="font-nunito">
 							<a target="_blank" className="flex items-center gap-1 hover:underline" href="https://github.com/FixRuan/Me-Encoded" rel="noreferrer">
 								Source
-								<Icon
-									path={mdiGit}
-									size={0.8}
-									color="#D04164"
-								/>
+								{/* git source icon  color="#D04164"*/}
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div className="sm:flex md:hidden">
 					<button onClick={() => setNav(true)} className="cursor-pointer">
-						<Icon
-							className="transition-all hover:scale-125 ease-in-out duration-500"
-							path={mdiMenu}
-							size={1}
-							color="#D04164"
-						/>
+						{/* Menu icon  color="#D04164 - transition-all hover:scale-125 ease-in-out duration-500"*/}
 					</button>
 				</div>
 			</div>
@@ -87,12 +64,7 @@ export function Header() {
 				}>
 					<div className="flex flex-col">
 						<button onClick={() => setNav(false)} className="flex items-center justify-center bg-red w-6 h-6 rounded-full self-end">
-							<Icon
-								className="cursor-pointer"
-								path={mdiClose}
-								size={0.6}
-								color="#F4EDE4"
-							/>
+							{/* close Icon color="#F4EDE4" - cursor-pointer*/}
 						</button>
 
 						<h2 className="text-xl font-MPlus font-bold mb-6 text-red">Navegação</h2>
@@ -107,11 +79,7 @@ export function Header() {
 									className="flex items-center gap-1 hover:underline"
 								>
 									Source
-									<Icon
-										path={mdiGit}
-										size={0.8}
-										color="#D04164"
-									/>
+									{/* git source icon  color="#D04164"*/}
 								</a>
 							</li>
 						</ul>
@@ -121,19 +89,11 @@ export function Header() {
 
 							<div className="flex gap-4 mt-4">
 								<a target="_blank" href="https://github.com/fixruan" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
-									<Icon
-										path={mdiGithub}
-										size={0.8}
-										color="#F0E7DB"
-									/>
+									{/* github icon  color="#F0E7DB"*/}
 								</a>
 
 								<a target="_blank" href="https://www.linkedin.com/in/fixruan/" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
-									<Icon
-										path={mdiLinkedin}
-										size={0.8}
-										color="#F0E7DB"
-									/>
+									{/* linkedin icon  color="#F0E7DB"*/}
 								</a>
 							</div>
 						</div>

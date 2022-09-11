@@ -1,7 +1,6 @@
 import React from "react";
 import { FieldError } from "react-hook-form";
 
-
 interface InputProps {
 	name: string;
 	title: string;

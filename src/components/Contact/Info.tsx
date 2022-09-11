@@ -1,8 +1,5 @@
 import React from "react";
 
-import { mdiPhone, mdiEmail, mdiGithub, mdiLinkedin, mdiMapMarker } from "@mdi/js";
-import Icon from "@mdi/react";
-
 import contact_shape from "../../assets/contact-shape.svg";
 
 export function Info() {
@@ -18,43 +15,43 @@ export function Info() {
 
 			<div className="flex flex-col mt-8 mb-16">
 				<span className="flex gap-2 items-center text-text font-nunito font-medium text-xl  dark:text-secondary">
-					<Icon
+					{/* <Icon
 						path={mdiPhone}
 						size={1}
-					/>
+					/> */}
 					(44) 99833-4877
 				</span>
 				<span className="flex mt-4 gap-1 items-center text-text font-nunito font-medium text-xl  dark:text-secondary">
-					<Icon
+					{/* <Icon
 						path={mdiEmail}
 						size={1}
-					/>
+					/> */}
 					ruangoio01@gmail.com
 				</span>
 				<span className="flex mt-4 gap-1 items-center text-text font-nunito font-medium text-xl  dark:text-secondary">
-					<Icon
+					{/* <Icon
 						path={mdiMapMarker}
 						size={1}
-					/>
+					/> */}
 					Goioerê PR
 				</span>
 			</div>
 
 			<div className="flex items-center gap-2 md:mt-16">
 				<a target="_blank" href="https://github.com/fixruan" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
-					<Icon
+					{/* <Icon
 						path={mdiGithub}
 						size={0.8}
 						color="#F0E7DB"
-					/>
+					/> */}
 				</a>
 
 				<a target="_blank" href="https://www.linkedin.com/in/fixruan/" className="w-8 h-8 rounded-full text-primary flex items-center justify-center bg-red hover:scale-105 transition-all duration-400" rel="noreferrer">
-					<Icon
+					{/* <Icon
 						path={mdiLinkedin}
 						size={0.8}
 						color="#F0E7DB"
-					/>
+					/> */}
 				</a>
 			</div>
 

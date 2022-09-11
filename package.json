@@ -12,9 +12,6 @@
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@hookform/resolvers": "^2.9.7",
-    "@mdi/font": "^7.0.96",
-    "@mdi/js": "^7.0.96",
-    "@mdi/react": "^1.6.1",
     "@react-three/drei": "^9.29.1",
     "@react-three/fiber": "^8.7.2",
     "aos": "^2.3.4",

@@ -1,7 +1,6 @@
 import React from "react";
 import { FooterWidget } from "./FooterWidget";
 
-
 export function Footer() {
 	return (
 		<section className="h-16 w-full flex items-center justify-center mt-12 relative overflow-hidden" id="footer">

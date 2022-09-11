@@ -13,7 +13,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 
-export function App() {
+export default function App() {
 	useEffect(() => {
 		Aos.init({
 			duration: 1400,
@@ -22,12 +22,14 @@ export function App() {
 
 	return (
 		<WidgetConfigProvider>
-			<Header />
-			<About />
-			<Projects />
-			<Skills />
-			<Contact />
-			<Footer />
+			<>
+				<Header />
+				<About />
+				<Projects />
+				<Skills />
+				<Contact />
+				<Footer />
+			</>
 		</WidgetConfigProvider>
 	);
 }
