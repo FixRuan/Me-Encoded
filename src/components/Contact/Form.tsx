@@ -17,6 +17,10 @@ const EmailFormSchema = Yup.object().shape({
 	mess: Yup.string().min(8, "Mínimo de 8 caracteres").required("Informe uma mensagem"),
 });
 
+const EmailJsService = import.meta.env.VITE_EMAILJS_SERVICE;
+const EmailJsTemplate = import.meta.env.VITE_EMAILJS_TEMPLATE;
+const EmailJsPublicAPI = import.meta.env.VITE_EMAILJS_PUBLIC_API;
+
 
 export function Form() {
 	const form = useRef<string | HTMLFormElement>("");
@@ -32,7 +36,7 @@ export function Form() {
 		(document.getElementById("fullName") as HTMLInputElement).value = name + " " + lastName;
 
 		event?.preventDefault();
-		emailjs.sendForm("service_2y6jfng", "template_z7ig0zi", form.current, "Moh82Bl9kvb-59QJi")
+		emailjs.sendForm(EmailJsService, EmailJsTemplate, form.current, EmailJsPublicAPI)
 			.catch(error => console.log(error));
 		reset();
 	}
