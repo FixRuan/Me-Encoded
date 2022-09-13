@@ -16,6 +16,7 @@ https://me-fixruan.vercel.app/
 - Email JS
 - Three Js
 - React-three-fiber
+- Context API
 - Yup
 - Aos
 - Phosphor-react
