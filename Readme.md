@@ -12,6 +12,7 @@ https://me-fixruan.vercel.app/
 ## Stack
 
 - React
+- Typescript
 - Tailwind css
 - Email JS
 - Three Js
