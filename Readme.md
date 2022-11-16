@@ -21,6 +21,7 @@ https://me-fixruan.vercel.app/
 - Yup
 - Aos
 - Phosphor-react
+- vite
 
 ## Aprendizados
 
