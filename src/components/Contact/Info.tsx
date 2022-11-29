@@ -24,7 +24,7 @@ export function Info() {
 			<div className="flex flex-col mt-8 mb-16">
 				<span className="flex gap-2 items-center text-text font-nunito font-medium text-xl  dark:text-secondary">
 					<Phone size={26} />
-					(44) 99833-4877
+					(44) 99814-8450
 				</span>
 				<span className="flex mt-4 gap-1 items-center text-text font-nunito font-medium text-xl  dark:text-secondary">
 					<EnvelopeSimple size={26} />
