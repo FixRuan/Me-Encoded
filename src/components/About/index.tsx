@@ -42,7 +42,7 @@ export function About() {
 
 					<img
 						className="w-[100px] h-[100px] rounded-full"
-						src="https://i.pinimg.com/564x/0b/02/d0/0b02d0f8910069b921ba9fb041ca27be.jpg"
+						src="https://avatars.githubusercontent.com/u/84464007?v=4"
 						alt="Perfil Image"
 					/>
 
