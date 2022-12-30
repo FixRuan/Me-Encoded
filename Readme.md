@@ -61,3 +61,7 @@ yarn
 ```bash
 yarn dev
 ```
+
+</br>
+
+[![Skills](https://skillicons.dev/icons?i=react,typescript,tailwindcss,vite)](https://skillicons.dev)
