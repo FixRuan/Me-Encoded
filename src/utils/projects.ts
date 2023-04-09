@@ -6,6 +6,7 @@ import PokedexImage from "../assets/projects/pokedex.png";
 import IgnewsImage from "../assets/projects/ignews.png";
 import GithubBlogImage from "../assets/projects/githubBlog.png";
 import RocketHelpImage from "../assets/projects/rocketHelp.png";
+import LunaBusImage from "../assets/projects/lunabus.png";
 
 interface Project {
 	name: string;
@@ -62,6 +63,12 @@ const projectsArray: Project[] = [
 		description: "Aplicatipo para resoluções de problemas, desenvolvido no Ignite Lab (rocketseat)",
 		image: RocketHelpImage,
 		link: "https://github.com/FixRuan/Rocket-Help"
+	},
+	{
+		name: "Luna bus",
+		description: "Aplicativo para transporte público",
+		image: RocketHelpImage,
+		link: "https://github.com/404jv/lunabus"
 	},
 ];
 
