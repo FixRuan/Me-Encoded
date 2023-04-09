@@ -67,7 +67,7 @@ const projectsArray: Project[] = [
 	{
 		name: "Luna bus",
 		description: "Aplicativo para transporte público",
-		image: RocketHelpImage,
+		image: LunaBusImage,
 		link: "https://github.com/404jv/lunabus"
 	},
 ];
